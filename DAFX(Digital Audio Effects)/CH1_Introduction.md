@@ -1,10 +1,6 @@
-### simple basics of digital
-
 ## CH1 Introduction
 
 This chapter gives an introduction to digital signal processing and shows software implementations with the MATLAB programming tool.
-
-
 
 ---
 
@@ -38,18 +34,23 @@ This chapter gives an introduction to digital signal processing and shows softwa
 
 + Semantic descriptors
 
-
-
 ---
 
 ### :yellow_heart: simple basics of digital
 
 + digital signal
   
-  + ADC,DAC
+  + ADC(analog-to-digital):sampling, quantization, 采样率$f_{s}=1/T$，单位为HZ
+  + DAC(digital-to-analog)
+  + discrete-time axis，normalized discrete-time axis
+  + block processing;sample by sample processing
 
 + spectrum analysis
+  
+  + discrete fourier transform(离散傅里叶变换)
+  
+  + Inverse discrete Fourier transform (IDFT)（反离散傅里叶变换）
+  
+  + Spectrogram
 
 + digital systems
-
-
