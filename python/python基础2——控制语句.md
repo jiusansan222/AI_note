@@ -50,12 +50,29 @@ else:
 + for语句
   
   + 用于遍历任何的可迭代对象，比如字符串或列表
+  + 在字典中遍历时，关键字和对应的值可以使用 items() 方法同时解读出来，表示为`for k, v in kdict.items():`
+  + 在序列中遍历时，索引位置和对应值可以使用 enumerate() 函数同时得到，表示为`for i, v in enumerate(['agree','greeb','carb'])`,其中i是索引位置，v是对应的值
+  + 同时遍历两个或更多的序列，可以使用 zip() 组合，方法见下
+  + 要反向遍历一个序列，首先指定这个序列，然后调用 reversed() 函数，表示为`for i in reversed(range(1, 10, 2))`
+  + 要按顺序遍历一个序列，使用 sorted() 函数返回一个已排序的序列，并不修改原值
 
 ```python
+# for循环基本用法
 sum = 0
 for x in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
     sum = sum + x
 print(sum)
+
+
+# 用zip同时遍历多个序列
+>>> questions = ['name', 'quest', 'favorite color']
+>>> answers = ['lancelot', 'the holy grail', 'blue']
+>>> for q, a in zip(questions, answers):
+...     print('What is your {0}?  It is {1}.'.format(q, a))
+...
+What is your name?  It is lancelot.
+What is your quest?  It is the holy grail.
+What is your favorite color?  It is blue.
 ```
 
 + range()函数可以生成数字序列
