@@ -15,7 +15,6 @@ A digital audio effect based on time-frequency representations requires three st
 + block-by-block analysis/synthesis model(逐块分析/综合模型)
   
   + 通过逐步步进的方式，重叠地从原始信号中取出 Analysis_block，步进长度为analysis len。之后对Analysis block中的信号进行FFT变换至频域，在频域中对频域信息(幅值、相位)按需求进行处理(Processing)，最后通过IFFT还原频域信号至时域，并进行综合相加(Synthesis and overlap)，得出Synthesis block。同样的，综合相加也有步进长度，为Synthesis len。
-    
 
 ---
 

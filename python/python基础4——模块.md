@@ -1,3 +1,20 @@
+---
+title: python基础4——模块
+
+date: 2022-7-3 10:59:20
+
+updated: 2022-7-3 10:59:20
+
+tags:
+
+- python语言
+
+categories:
+
+- [编程语言, python, python快速入门]
+
+---
+
 ## python基础4——模块
 
 #### 一、模块
@@ -122,5 +139,3 @@ sound/                          顶层包
   sys.path.append(<TARGET_PARENT_PATH>)
   import <FILE_STEM>
   ```
-  
-  
