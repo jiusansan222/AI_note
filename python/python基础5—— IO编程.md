@@ -95,11 +95,11 @@ IO编程中，stream是一个很重要的概念。Input Stream是指数据从外
     + 文件使用后必须关闭，因此需要调用`close`函数处理
     
     + :exclamation:`with`语句自动调用`close()`方法可以简化写法
-
-```python
-with open('/path/to/file', 'r') as f:
-  print(f.read())
-```
+    
+    ```python
+        with open('/path/to/file', 'r') as f:
+      print(f.read())
+    ```
 
 + 读文件
   
